@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Jquery Onclick</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" href="testjque.js" ></script>
+        <link rel="stylesheet" type="text/css" href="testcssjque.css">
+            
+    </head>
+    <body>
+       
+
+<button id="unmuteButton"></button>
+<p class="classp1">this is paragraph1</p>
+<p class="classp2">this is paragraph2 </p>
+<button onclick="Myfunction()" value="">click me</button>
+<script>function Myfunction(){
+    var pcl1=$("p.classp1");
+    var pcl2=$("p.classp2") ;                
+        if(!pcl1.css("border","1px solid red") && !pcl2.css("border","3px solid yellow")){$("p.classp1").css("border","1px solid red");}
+        if(pcl1.css("border","1px solid red") && pcl2.css("border","3px solid yellow")){$("p.classp1").css("border","");
+                                                                                        $("p.classp2").css("border","");}
+        
+</script>
+<script>
+        $("p.classp2").click(function(){
+            $("p.classp2").css("border","3px solid yellow");
+    })  
+
+</script>
+
+    </body>
+</html>
