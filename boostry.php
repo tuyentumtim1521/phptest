@@ -51,12 +51,7 @@
     }
     else echo "sai roi requst== post nha";
     ?>
-              </form>
-              <form method="post" action="/$post.php">
-            Name: <input type="text" name="fname">
-            <input type ="submit">
-        </form>
-            </div>
+              
           </nav>
     </body>
 </html>
